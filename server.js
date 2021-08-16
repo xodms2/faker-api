@@ -30,14 +30,6 @@ const createCompany = () => {
   return newCompany;
 }
 
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello World" })
-});
-
-app.get("/api/random-url", (req, res) => {
-  res.json({ message : "You have hit the random url congrats!" });
-})
-
 app.get("/api/user/new", (req, res) => {
   const user = createUser();
   console.log(user);
